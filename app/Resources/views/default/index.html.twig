@@ -1,5 +1,8 @@
-{% extends 'base.html.twig' %}
-
+{% extends '::base.html.twig' %}
+{%block title 'Yoda!!'%}
 {% block body %}
-    Homepage.
+    {% for i in 1..10%}
+    	Hello{{name|upper}} {{i}}
+    {%endfor%}
+    <h2>Event Details</h2>
 {% endblock %}
